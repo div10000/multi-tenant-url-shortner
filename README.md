@@ -103,7 +103,7 @@ python -m http.server 5500 --directory frontend
 ### 2. Access in Browser
 
 Open your browser and navigate to:
-- http://localhost:5500
+- http://127.0.0.1:5500/index.html
 
 ## API Endpoints
 
@@ -148,23 +148,6 @@ Open your browser and navigate to:
 | Database | SQLite3 (development) |
 | Multi-Tenancy | Domain-based tenant resolution |
 
-## Development
-
-### Environment Variables
-
-Create a `.env` file in the backend directory for sensitive settings:
-
-```
-DEBUG=True
-SECRET_KEY=your-secret-key-here
-ALLOWED_HOSTS=localhost,127.0.0.1
-```
-
-### Running Tests
-
-```bash
-python backend/manage.py test
-```
 
 ## Deployment
 
@@ -177,36 +160,4 @@ For production deployment:
 5. Configure HTTPS/SSL certificates
 6. Set up proper CORS origins for your tenants
 
-## License
-
-This project is open source and available under the MIT License.
-
-## Support
-
-For issues, questions, or contributions, please open an issue on the repository.
-}
-
-🔁 Redirect
-
-Visiting the short URL:
-
-http://localhost:8000/AbC123
-
-
-Redirects to the original URL.
-
-🔐 CORS & Multi-Tenancy
-
-CORS is handled dynamically using tenant domains
-
-Adding a new tenant does not require updating settings.py
-
-One backend can safely serve multiple independent frontends
-
-🚀 Notes
-
-Frontend can be replaced with React / Next.js / Mobile apps
-
-Designed for white-label SaaS use cases
-
-Production-ready architecture
+Chant Hare Krishna and Be Happy  🙇🏻
